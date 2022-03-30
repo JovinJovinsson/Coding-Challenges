@@ -1,8 +1,8 @@
-# Google Kick Start Problems
+# Coding Challenges
  My repository of submissions for Google Kick Start problem solutions.
 
 #### Folder Structure Below
-
-* YYYY
-  * Round #
-    * ProblemName.cs
+* Originator
+  * YYYY
+    * Round #
+      * ProblemName.cs
