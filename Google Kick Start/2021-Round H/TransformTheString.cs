@@ -5,16 +5,13 @@
  * Author: Jóvin Jóvinsson
 */
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
-namespace KickStart2021
+namespace TransformTheString
 {
     class TransformTheString
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Get the number of test cases
             int numCases = Convert.ToInt32(Console.ReadLine());
@@ -65,6 +62,8 @@ namespace KickStart2021
                 // Output the desired results
                 Console.WriteLine("Case #" + (i + 1) + ": " + numberOfOperations);
             }
+            // Wait for the user to input a key before closing
+            Console.ReadKey();
         }
     }
 }
