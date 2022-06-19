@@ -1,7 +1,0 @@
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\obj\Debug\Coding Challenges.csproj.AssemblyReference.cache
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\obj\Debug\Coding Challenges.csproj.CoreCompileInputs.cache
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\bin\Debug\Coding Challenges.exe.config
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\bin\Debug\Coding Challenges.exe
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\bin\Debug\Coding Challenges.pdb
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\obj\Debug\Coding Challenges.exe
-C:\Users\jovin\Documents\GitHub\Coding-Challenges\obj\Debug\Coding Challenges.pdb
