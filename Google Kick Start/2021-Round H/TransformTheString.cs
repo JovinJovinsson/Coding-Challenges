@@ -11,7 +11,9 @@ namespace TransformTheString
 {
     class TransformTheString
     {
-        public static void Main(string[] args)
+        // Main method declaration removed while running other problems
+        public static void XMain(string[] args)
+        //public static void Main(string[] args)
         {
             // Get the number of test cases
             int numCases = Convert.ToInt32(Console.ReadLine());
