@@ -6,6 +6,7 @@
 */
 
 using System;
+using System.Collections.Generic;
 
 namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
 {
@@ -23,7 +24,7 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
                 // Retrieve the length of the string
                 int length = Convert.ToInt32(Console.ReadLine());
                 // Retrieve the padlock & favourites strings as char[]
-                string startString = Console.ReadLine();
+                char[] startString = (Console.ReadLine()).ToCharArray();
 
                 // If they input a string with a different length to what they anticipated throw an error
                 if (startString.Length != length) { throw new Exception("Input string length does not match specified length"); }
@@ -40,16 +41,24 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
         /// </summary>
         /// <param name="current">The starting string that will be modified</param>
         /// <returns></returns>
-        static string MakeChanges(string current)
+        static string MakeChanges(char[] start)
         {
+            LinkedList<char> charList = new LinkedList<char>(start);
+
+            for (LinkedListNode<char> node = charList.First; node != null; node = node.Next)
+            {
+                
+            }
+
+            return "";
             // Continue to do string replacements while we have changes happening
-            while (true)
+            /*while (true)
             {
                 // Store the string in it's current state to check if changes were made
                 string previous = current;
 
                 // This allows us to efficiently replace all values without doing .Replace().Replace() manually typing it out
-                /*int x = 0;
+                int x = 0;
                 int y = 1;
                 int z = 2;
                 // When X hits 10 we no longer want to change, this means our final search will be "90" to replace with "1"
@@ -62,16 +71,14 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
 
                     // Replace the new substring from our numbers
                     current = current.Replace(x++ + "" + y++, "" + z++);
-                }*/
-                current = current.Replace("01", "2").Replace("12", "3").Replace("23", "4").Replace("34", "5").Replace("45", "6")
-                    .Replace("56", "7").Replace("67", "8").Replace("78", "9").Replace("89", "0").Replace("90", "1");
+                }
 
                 // No changes happened this iteration, return the final string
                 if (current == previous)
                 {
                     return current;
                 }
-            }
+            }*/
         }
     }
 }
