@@ -49,7 +49,7 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
                 string previous = current;
 
                 // This allows us to efficiently replace all values without doing .Replace().Replace() manually typing it out
-                int x = 0;
+                /*int x = 0;
                 int y = 1;
                 int z = 2;
                 // When X hits 10 we no longer want to change, this means our final search will be "90" to replace with "1"
@@ -62,7 +62,9 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
 
                     // Replace the new substring from our numbers
                     current = current.Replace(x++ + "" + y++, "" + z++);
-                }
+                }*/
+                current = current.Replace("01", "2").Replace("12", "3").Replace("23", "4").Replace("34", "5").Replace("45", "6")
+                    .Replace("56", "7").Replace("67", "8").Replace("78", "9").Replace("89", "0").Replace("90", "1");
 
                 // No changes happened this iteration, return the final string
                 if (current == previous)
