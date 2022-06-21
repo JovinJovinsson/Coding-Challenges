@@ -1,8 +1,7 @@
 /*
  * Solution for Google Kick Start 2021 Round H "Painter" problem
  * Problem URL: https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435914/00000000008d9a88#problem
- * Start Date: 18th June 2022
- * Submission Date: 21st June 2022 (Success)
+ * Successful Date: 21st June 2022 (Success)
  * Author: Jóvin Jóvinsson
 */
 
@@ -32,7 +31,7 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
             // Repeat the code for the number of times
             for (int i = 0; i < numCases; i++)
             {
-                // Retrieve the padlock & favourites strings as char[]
+                // Retrieve the length of the painting
                 int length = Convert.ToInt32(Console.ReadLine());
                 char[] painting = (Console.ReadLine()).ToCharArray();
 

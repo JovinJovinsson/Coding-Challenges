@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Google Kick Start\2021-Round H\Painter.cs" />
+    <Compile Include="Google Kick Start\2021-Round H\SillySubstitutions.cs" />
     <Compile Include="Google Kick Start\2021-Round H\TransformTheString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

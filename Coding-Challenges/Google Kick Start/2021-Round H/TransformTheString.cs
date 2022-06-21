@@ -1,7 +1,7 @@
 /*
  * Solution for Google Kick Start 2021 Round H "Transform the String" problem
  * Problem URL: https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435914/00000000008da461#problem
- * Submission Date: 30th March 2022
+ * Successful Date: 30th March 2022
  * Author: Jóvin Jóvinsson
 */
 using System;
