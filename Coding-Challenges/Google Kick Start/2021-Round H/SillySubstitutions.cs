@@ -11,6 +11,8 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
 {
     class SillySubstitutions
     {
+        // Main method declaration removed while running other problems
+        //public static void XMain(string[] args)
         public static void Main(string[] args)
         {
             // Get the number of test cases
@@ -22,6 +24,9 @@ namespace Coding_Challenges.Google_Kick_Start._2021_Round_H
                 int length = Convert.ToInt32(Console.ReadLine());
                 // Retrieve the padlock & favourites strings as char[]
                 string startString = Console.ReadLine();
+
+                // If they input a string with a different length to what they anticipated throw an error
+                if (startString.Length != length) { throw new Exception("Input string length does not match specified length"); }
 
                 // Output the desired results
                 Console.WriteLine("Case #" + (i + 1) + ": " + MakeChanges(startString));
