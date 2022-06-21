@@ -2,21 +2,19 @@
  * Solution for Google Kick Start 2021 Round H "Painter" problem
  * Problem URL: https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435914/00000000008d9a88#problem
  * Start Date: 18th June 2022
- * Submission Date: 
+ * Submission Date: 21st June 2022 (Success)
  * Author: Jóvin Jóvinsson
 */
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 class Painter
 {
     // Main method declaration removed while running other problems
-    //public static void XMain(string[] args)
-    public static void Main(string[] args)
+    public static void XMain(string[] args)
+    //public static void Main(string[] args)
     {
         // Get the number of test cases
         int numCases = Convert.ToInt32(Console.ReadLine());
@@ -39,13 +37,12 @@ class Painter
             // Store the total number of strokes
             int numberOfStrokes = 0;
             
-            // Iterate over each colour
-            /*foreach (KeyValuePair<char, char[]> kvp in colours)
-            {*/
-            numberOfStrokes += strokesForColour(painting, length, 'R', colours);
-            numberOfStrokes += strokesForColour(painting, length, 'Y', colours);
-            numberOfStrokes += strokesForColour(painting, length, 'B', colours);
-            //}
+            // Iterate over each of the primary colours
+            for (int j = 0; j < 3; j++)
+            {
+                // Get the number of strokes for that colour & add to our total
+                numberOfStrokes += strokesForColour(painting, length, colours.ElementAt(j).Key, colours);
+            }
 
             // Output the desired results
             Console.WriteLine("Case #" + (i + 1) + ": " + numberOfStrokes);
